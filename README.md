@@ -1,34 +1,22 @@
-### Basic Yelp client
+# YelpClient
 
-This is a headless example of how to implement an OAuth 1.0a Yelp API client. The Yelp API provides an application token that allows applications to make unauthenticated requests to their search API.
+## Time spent: 20 hours spent in total
 
-### Next steps
+## Completed Functions:
+* [x] Search results page
+ ** Table rows should be dynamic height according to the content height.
+ ** Custom cells should have the proper Auto Layout constraints.
+ ** Search bar should be in the navigation bar
+* [x] Filter page
+ ** The filters you should actually have are: category, sort (best match, distance, highest rated), distance, deals (on/off).
+ ** The filters table should be organized into sections as in the mock.
+ ** You can use the default UISwitch for on/off states. 
+ ** Clicking on the "Search" button should dismiss the filters page and trigger the search w/ the new filter settings.
 
-- Check out `BusinessesViewController.swift` to see how to use the `Business` model.
+## Video Walkthrough 
+Here's a walkthrough of implemented user stories:
 
-### Sample request
+<img src='https://github.com/EchoG/YelpClient/blob/master/YelpClient.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-**Basic search with query**
-
-```
-Business.searchWithTerm("Thai", completion: { (businesses: [Business]!, error: NSError!) -> Void in
-    self.businesses = businesses
-    
-    for business in businesses {
-        print(business.name!)
-        print(business.address!)
-    }
-})
-```
-
-**Advanced search with categories, sort, and deal filters**
-
-```
-Business.searchWithTerm("Restaurants", sort: .Distance, categories: ["asianfusion", "burgers"], deals: true) { (businesses: [Business]!, error: NSError!) -> Void in
-
-    for business in businesses {
-        print(business.name!)
-        print(business.address!)
-    }
-}
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ```
