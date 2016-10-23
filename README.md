@@ -3,11 +3,11 @@
 ## Time spent: 20 hours spent in total
 
 ## Completed Functions:
-1 [x] Search results page
+* [x] Search results page
  * Table rows should be dynamic height according to the content height.
  * Custom cells should have the proper Auto Layout constraints.
  * Search bar should be in the navigation bar
-2 [x] Filter page
+* [x] Filter page
  * The filters you should actually have are: category, sort (best match, distance, highest rated), distance, deals (on/off).
  * The filters table should be organized into sections as in the mock.
  * You can use the default UISwitch for on/off states. 
